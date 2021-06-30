@@ -8,22 +8,22 @@ app.use(express.json())
 let bookma = {
   persons: [
     {
-      name: "Dolan Choo",
-      number: "True... yeah...",
+      name: "test 0",
+      number: "testing",
       id: 2
     },
     {
-      name: "Okra Laue",
-      number: "BIG TIDDY BUNNY HHHNGGGGGGAAAAAA-",
+      name: "test 1",
+      number: "special characters !@#$%^&*()",
       id: 3
     },
     {
-      name: "No run wrong",
-      number: "What's up gamers.",
+      name: "test 2",
+      number: "empty string     ",
       id: 4
     },
     {
-      name: "asdf",
+      name: "test 3",
       number: "asdf",
       id: 5
     }
@@ -31,7 +31,7 @@ let bookma = {
 }
 
 app.get('/', (request, response) => {
-  response.send('<h1>Welcome to Gaymerbooke!</h1>')
+  response.send('<h1>Welcome to Database!</h1>')
 })
 
 app.get('/api/bookma', (request, response) => {
